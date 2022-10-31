@@ -40,6 +40,9 @@ nav {
 main {
   padding: 55px 27px;
   color: white;
+  background-image: url(../img/reactjs-large.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
 }
 
 .main_title {
@@ -50,13 +53,16 @@ main {
 
 .main_facts {
   padding-top: 15px;
+  max-width: 500px;
   /* list-style: none; */
 }
 
-/* .main_facts > li::before {
-  color: #61DAFB;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-} */
+ .main_facts > li {
+  line-height: 19px;
+  padding-block: 5px;
+} 
+
+.main_facts > li::marker {
+  color: #61dafb;
+  font-size: 1.3rem;
+}
